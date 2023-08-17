@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="A progressive NFT minting app built using powerful Stable Diffusion ML model."
+    />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <style>
+            .preloader {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        background-color: white;
+        z-index: 21;
+      }
+
+      .preloader > div {
+        width: 35px;
+        height: 35px;
+        background-color: black;
+        border-radius: 50%;
+        animation: bouncing-loader 0.5s infinite alternate;
+      }
+
+      .preloader > div:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+
+      .preloader > div:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+
+      @keyframes bouncing-loader {
+        to {
+          opacity: 0.1;
+          transform: translate3d(0, -35px, 0);
+        }
+      }
+    </style>
+    <title>NFT Minting App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="preloader" id="pre-loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="root"></div>
+  </body>
+  <script>
+    window.addEventListener("load", () => {
+      document.getElementById("pre-loader").style.display = "none";
+    });
+  </script>
+</html>
