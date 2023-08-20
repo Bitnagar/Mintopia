@@ -13,10 +13,9 @@ export default function About() {
           <h2 className="preface">Preface</h2>
           <hr></hr>
           <p className="about-p">
-            The{" "}
             <strong>
               <em style={{ fontSize: "0.6rem", fontWeight: "700" }}>
-                NFT Minting App
+                Minertia
               </em>{" "}
             </strong>
             is a progressive web3 app that harnesses the power of Stable
@@ -25,7 +24,7 @@ export default function About() {
             market place.
           </p>
           <p className="about-p">
-            The NFT minting app was developed using React 18 and hugging face
+            Minertia was developed using React 18 and hugging face
             stable diffusion API. NFT minting functionality was developed with
             the NFT infrastructure{" "}
             <a href="https://www.nftport.xyz" style={a}>

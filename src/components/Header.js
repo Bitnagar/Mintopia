@@ -66,7 +66,7 @@ export default function Header() {
             fill="black"
           />
         </svg>
-        <h1 className="heading">NFT Minting App</h1>
+        <h1 className="heading">Minertia</h1>
         <div className="toggle-btns">
           <img
             ref={sunRef}
